@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Movie>
+@{
+    ViewData["Title"] = "Database";
+}
+<h2 class="movies">Welcome to my list!!!</h2>
+<p class="movie">This is the movies I have watched:</p>
+
+@if (!Model.Any()) // перевірка на порожній список
+{
+    <div class="alert alert-info">
+       Something went wrong
+    </div>
+} // взагалі, цей коктейль HTML + C# називається Razor, він дозволяє впроваджувати C# код в HTML розмітку
+else // браузер звісно не розуміє C#, тому цей код буде виконаний на сервері, а в браузер надійде вже готова HTML-розмітка
+{ // процесс перетворення Razor в HTML називається рендерингом, займається ним движок Razor View Engine (частина ASP.NET Core)
+    <table class="movies-table">
+        <thead>
+            <tr>
+                <th>Poster</th>
+                <th>Name</th>
+                <th>Director</th>
+                <th>Age</th>
+                <th>Genre</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var s in Model) // @ це рейзор-синтаксис для впровадження C# коду в HTML
+            {
+                <tr>
+                    <td class="poster"><img src="@s.Poster"/></td>
+                    <td class="name">@s.Name</td>
+                    <td class="director">@s.Director</td>
+                    <td class="age">@s.Age</td>
+                    <td class="genre">@s.Genre</td>
+                    <td><span class="description">@s.Description</span></td>
+                </tr> <!-- тепер можна і Shared / _Layout.cshtml подивитися :) -->
+            }
+        </tbody>
+    </table>
+}

@@ -1,0 +1,225 @@
+/* ===== Sticky footer: перебиваем шаблонный site.css ===== */
+html {
+    position: static !important;
+    height: auto !important;
+    min-height: 100% !important;
+}
+
+body {
+    margin: 0 !important;
+    margin-bottom: 0 !important; /* шаблон ставит 60px */
+    padding: 0 !important;
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #f4f5fb;
+}
+
+    /* контент забирает всё свободное место */
+    body > .container,
+    body > .container-fluid,
+    body > main,
+    body > div:has(> main) {
+        flex: 1 0 auto !important;
+    }
+
+/* футер прижат вниз, без position:absolute */
+footer,
+.footer {
+    position: static !important;
+    flex: 0 0 auto !important;
+    margin-top: auto !important;
+    width: 100%;
+    padding: 1.2rem 0;
+    background: #1a1a2e;
+    color: #fff !important;
+    text-align: center;
+    font-size: 0.95rem;
+    border-top: none !important;
+    line-height: normal !important;
+}
+
+    .footer a, footer a {
+        color: #b8c0ff !important;
+        text-decoration: none;
+    }
+
+        .footer a:hover, footer a:hover {
+            text-decoration: underline;
+        }
+
+
+
+/* ===== Заголовки ===== */
+.movies {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.movie {
+    text-align: center;
+    color: #555;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+/* ===== Таблица ===== */
+.movies-table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 3rem auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+    .movies-table thead {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #fff;
+    }
+
+    .movies-table th {
+        padding: 1.1rem 1.2rem;
+        text-align: left;
+        font-weight: 600;
+        font-size: 0.95rem;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
+    .movies-table tbody tr {
+        transition: background-color 0.2s ease;
+    }
+
+        .movies-table tbody tr:nth-child(even) {
+            background-color: #f8f9ff;
+        }
+
+        .movies-table tbody tr:hover {
+            background-color: #eef0ff;
+        }
+
+    .movies-table td {
+        padding: 1.1rem 1.2rem;
+        border-bottom: 1px solid #eaeaea;
+        vertical-align: middle;
+        color: #333;
+    }
+
+    .movies-table tbody tr:last-child td {
+        border-bottom: none;
+    }
+
+/* ===== Постер ===== */
+.poster img {
+    width: 70px;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: block;
+}
+
+/* ===== Колонки ===== */
+.name {
+    font-weight: 600;
+    color: #1a1a2e;
+    font-size: 1.05rem;
+}
+
+.director {
+    color: #555;
+}
+
+.age {
+    font-weight: 500;
+    color: #764ba2;
+    white-space: nowrap;
+}
+
+/* ===== Жанры — обычный текст в одну строку ===== */
+.genre {
+    font-weight: 400;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.4;
+}
+
+    /* если жанры выводятся списком <ul>/<li> — делаем их строкой через запятую */
+    ul.genre,
+    .genre ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: inline;
+    }
+
+        ul.genre li,
+        .genre li {
+            display: inline;
+        }
+
+            ul.genre li:not(:last-child)::after,
+            .genre li:not(:last-child)::after {
+                content: ", ";
+            }
+
+/* Описание */
+.description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    max-width: 320px;
+}
+
+/* Пустой список */
+.alert-info {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #e0f2fe;
+    color: #0369a1;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* ===== Адаптив ===== */
+@media (max-width: 900px) {
+    .table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .description {
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    .movies {
+        font-size: 1.6rem;
+    }
+
+    .movies-table th,
+    .movies-table td {
+        padding: 0.8rem 0.9rem;
+        font-size: 0.9rem;
+    }
+
+    .poster img {
+        width: 55px;
+        height: 82px;
+    }
+}
