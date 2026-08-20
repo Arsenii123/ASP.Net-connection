@@ -1,0 +1,30 @@
+@model Homework2.Models.Movie
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="details-page">
+    <div class="details-card">
+        <div class="details-header">
+            @if (!string.IsNullOrEmpty(Model.Poster))
+            {
+                <img src="@Model.Poster" alt="@Model.Name" class="details-poster" />
+            }
+            <div class="details-info">
+                <h1>@Model.Name</h1>
+                <p class="details-meta">@Model.Director · @Model.Genre · Age @Model.Age</p>
+            </div>
+        </div>
+
+        <div class="details-body">
+            <h3>Description</h3>
+            <p>@Model.Description</p>
+        </div>
+
+        <div class="details-actions">
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn-primary">Edit</a>
+            <a asp-action="Index" class="btn-secondary">Back to List</a>
+        </div>
+    </div>
+</div>

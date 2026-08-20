@@ -1,0 +1,63 @@
+@model Homework2.Models.Movie
+
+@{
+    ViewData["Title"] = "Create Movie";
+}
+
+<div class="form-page">
+    <div class="form-card">
+        <h1 class="form-title">Create Movie</h1>
+        <p class="form-subtitle">Add a new movie to the collection</p>
+
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" placeholder="Movie title" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Director"></label>
+                <input asp-for="Director" class="form-control" placeholder="Director name" />
+                <span asp-validation-for="Director" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Genre"></label>
+                <input asp-for="Genre" class="form-control" placeholder="Genre" />
+                <span asp-validation-for="Genre" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Poster"></label>
+                <input asp-for="Poster" class="form-control" placeholder="Poster URL" />
+                <span asp-validation-for="Poster" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Description"></label>
+                <textarea asp-for="Description" class="form-control" rows="4" placeholder="Short description"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Age"></label>
+                <input asp-for="Age" class="form-control" placeholder="Age rating" />
+                <span asp-validation-for="Age" class="text-danger"></span>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-primary">Create</button>
+                <a asp-action="Index" class="btn-secondary">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

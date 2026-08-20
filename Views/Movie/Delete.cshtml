@@ -1,0 +1,32 @@
+@model Homework2.Models.Movie
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="delete-page">
+    <div class="delete-card">
+        <h1 class="delete-title">Delete Movie</h1>
+        <p class="delete-warning">Are you sure you want to delete this movie?</p>
+
+        <div class="delete-info">
+            @if (!string.IsNullOrEmpty(Model.Poster))
+            {
+                <img src="@Model.Poster" alt="@Model.Name" class="delete-poster" />
+            }
+            <div>
+                <h2>@Model.Name</h2>
+                <p>@Model.Director · @Model.Genre · Age @Model.Age</p>
+                <p class="delete-desc">@Model.Description</p>
+            </div>
+        </div>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <div class="form-actions">
+                <button type="submit" class="btn-danger">Delete</button>
+                <a asp-action="Index" class="btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>

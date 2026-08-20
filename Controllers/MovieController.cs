@@ -1,40 +1,149 @@
-﻿using Homework2.Models;
+
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.IO;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Homework2.Models;
 
-
-
-namespace Homework2.Controllers
+public class MovieController : Controller
 {
-    public class MovieController:Controller
+    private readonly MovieContext _context;
+
+    public MovieController(MovieContext context)
     {
-       MovieContext db; // контролер виходить у базу даних через контекст даних StudentContext
-        public MovieController(MovieContext context) // контекст даних отримується через механізм впровадження залежностей (Dependency Injection)
-        { // прямого згадування або створення об'єкта StudentContext тут немає, все робиться автоматично завдяки налаштуванням в Program.cs
-            db = context;
-        } // можна було б і це навіть не писати, є спеціальний атрибут [FromServices], але так наочніше
+        _context = context;
+    }
 
-        // звісно, ще крутіше було б використати репозиторій, але це вже інша історія
-        // public StudentController(IRepository r) щось типу такого буде (але згодом)
-        // при такому підході, контролер не залежить від конкретної реалізації контексту даних,
-        // база даних може бути замінена на будь-яку іншу, що реалізує інтерфейс IRepository, в тому числі на мок, це зручно для тестування
+    // GET: MOVIES
+    public async Task<IActionResult> Index()    
+    {
+        return View(await _context.Movies.ToListAsync());
+    }
 
-        public async Task<IActionResult> Index() // public async Task<IActionResult> Index([FromServices] StudentContext db), тоді не потрібен конструктор
+    // GET: MOVIES/Details/5
+    public async Task<IActionResult> Details(int? id)
+    {
+        if (id == null)
         {
-            IEnumerable<Movie> movies = await Task.Run(() => db.Movies); // отримання списку студентів з бази даних через контекст даних
-            return View(movies); // повернення представлення Index (Views/Student/Index.cshtml)
-        } // вью отримає список студентів як модель (на читання)
-          // Метод для отображения страницы с формой
+            return NotFound();
+        }
 
-        // методи контролера бажано робити асинхронними, щоб не блокувати потік обробки запитів
-        // це особливо важливо при роботі з базою даних, де операції можуть бути тривалими
-        // якщо метод не асинхронний, то він блокує потік, поки виконується операція з базою даних
-        // в результаті, сервер може не встигати обробляти інші запити, що призводить до погіршення продуктивності
-        // а користувачів буде не 10, а 1000+, і всі вони чекатимуть відповіді від сервера
-        // спочатку запити ставляться в чергу, але й черга не безмежна, і врешті-решт сервер почне відмовляти в обслуговуванні нових запитів!
+        var movie = await _context.Movies
+            .FirstOrDefaultAsync(m => m.Id == id);
+        if (movie == null)
+        {
+            return NotFound();
+        }
+
+        return View(movie);
+    }
+
+    // GET: MOVIES/Create
+    public IActionResult Create()
+    {
+        return View();
+    }
+
+    // POST: MOVIES/Create
+    // To protect from overposting attacks, enable the specific properties you want to bind to.
+    // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Create([Bind("Id,Name,Director,Genre,Poster,Description,Age")] Movie movie)
+    {
+        if (ModelState.IsValid)
+        {
+            _context.Add(movie);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+        return View(movie);
+    }
+
+    // GET: MOVIES/Edit/5
+    public async Task<IActionResult> Edit(int? id)
+    {
+        if (id == null)
+        {
+            return NotFound();
+        }
+
+        var movie = await _context.Movies.FindAsync(id);
+        if (movie == null)
+        {
+            return NotFound();
+        }
+        return View(movie);
+    }
+
+    // POST: MOVIES/Edit/5
+    // To protect from overposting attacks, enable the specific properties you want to bind to.
+    // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Edit(int? id, [Bind("Id,Name,Director,Genre,Poster,Description,Age")] Movie movie)
+    {
+        if (id != movie.Id)
+        {
+            return NotFound();
+        }
+
+        if (ModelState.IsValid)
+        {
+            try
+            {
+                _context.Update(movie);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!MovieExists(movie.Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return RedirectToAction(nameof(Index));
+        }
+        return View(movie);
+    }
+
+    // GET: MOVIES/Delete/5
+    public async Task<IActionResult> Delete(int? id)
+    {
+        if (id == null)
+        {
+            return NotFound();
+        }
+
+        var movie = await _context.Movies
+            .FirstOrDefaultAsync(m => m.Id == id);
+        if (movie == null)
+        {
+            return NotFound();
+        }
+
+        return View(movie);
+    }
+
+    // POST: MOVIES/Delete/5
+    [HttpPost, ActionName("Delete")]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> DeleteConfirmed(int? id)
+    {
+        var movie = await _context.Movies.FindAsync(id);
+        if (movie != null)
+        {
+            _context.Movies.Remove(movie);
+        }
+
+        await _context.SaveChangesAsync();
+        return RedirectToAction(nameof(Index));
+    }
+
+    private bool MovieExists(int? id)
+    {
+        return _context.Movies.Any(e => e.Id == id);
     }
 }

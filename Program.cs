@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 namespace Homework2
 {
     using Homework2.Models;
