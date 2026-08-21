@@ -27,14 +27,14 @@
             {
                 <tr>
                     <td class="poster">
-                        @if (!string.IsNullOrEmpty(item.Poster))
-                        {
-                            <img src="@item.Poster" alt="@item.Name" />
-                        }
-                        else
-                        {
-                            <div class="no-poster">No image</div>
-                        }
+
+
+  
+                            <img src="@item.Poster.Path" alt="@item.Poster.Name" class="gallery-image" />
+         
+                                
+    
+                        
                     </td>
                     <td class="name">@Html.DisplayFor(modelItem => item.Name)</td>
                     <td>@Html.DisplayFor(modelItem => item.Director)</td>

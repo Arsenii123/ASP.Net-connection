@@ -8,7 +8,7 @@
 
         public string? Genre { get; set; }
 
-        public string? Poster { get; set; }
+        public FileModel? Poster { get; set; }
 
         public string? Description { get; set; }
                    

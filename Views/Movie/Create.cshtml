@@ -32,7 +32,15 @@
 
             <div class="form-group">
                 <label asp-for="Poster"></label>
-                <input asp-for="Poster" class="form-control" placeholder="Poster URL" />
+                <form asp-action="AddFile" asp-controller="Movie" method="post" enctype="multipart/form-data">
+                    <input type="file"
+                           name="uploadedFiles"
+                           class="form-control"
+                           multiple />
+                    <div class="buttons">
+                        <button type="submit" class="btn">Завантажити всі вибрані файли</button>
+                    </div>
+                </form>
                 <span asp-validation-for="Poster" class="text-danger"></span>
             </div>
 
