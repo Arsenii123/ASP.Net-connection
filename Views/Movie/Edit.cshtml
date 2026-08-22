@@ -9,7 +9,7 @@
         <h1 class="form-title">Edit Movie</h1>
         <p class="form-subtitle">Update movie information</p>
 
-        <form asp-action="Edit">
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
 
@@ -31,10 +31,25 @@
                 <span asp-validation-for="Genre" class="text-danger"></span>
             </div>
 
+            <!-- Текущий постер -->
             <div class="form-group">
-                <label asp-for="Poster"></label>
-                <input asp-for="Poster" class="form-control" />
-                <span asp-validation-for="Poster" class="text-danger"></span>
+                <label>Current Poster</label>
+                @if (Model.Poster != null)
+                {
+                    <div>
+                        <img src="@Model.Poster.Path" alt="@Model.Poster.Name" style="max-width: 150px;" />
+                    </div>
+                }
+                else
+                {
+                    <span>No poster</span>
+                }
+            </div>
+
+            <!-- Новый постер -->
+            <div class="form-group">
+                <label>New Poster (optional)</label>
+                <input type="file" name="posterFile" class="form-control" accept="image/*" />
             </div>
 
             <div class="form-group">

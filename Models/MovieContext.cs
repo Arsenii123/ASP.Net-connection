@@ -22,7 +22,7 @@ namespace Homework2.Models
                     {
 
                         Name = "intersteller.webp",
-                        Path = "img/intersteller.webp",
+                        Path = "/img/intersteller.webp",
                         UploadDate = DateTime.Now
                     },
                     Description = "A team of explorers travels through a wormhole in space to ensure humanity's survival.",
@@ -38,7 +38,7 @@ namespace Homework2.Models
                     {
 
                         Name = "avatar.webp",
-                        Path = "img/avatar.webp",
+                        Path = "/img/avatar.webp",
                         UploadDate = DateTime.Now
                     },
                     Description = "On Pandora, humans clash with the Na'vi while one soldier finds a new purpose.",
@@ -54,7 +54,7 @@ namespace Homework2.Models
                     {
 
                         Name = "spider-man.webp",
-                        Path = "img/spider-man.webp",
+                        Path = "/img/spider-man.webp",
                         UploadDate = DateTime.Now
                     },
                     Description = "Peter Parker gains spider-like powers and must balance heroism with personal life.",
@@ -70,7 +70,7 @@ namespace Homework2.Models
                     {
 
                         Name = "venom.webp",
-                        Path = "img/venom.webp",
+                        Path = "/img/venom.webp",
                         UploadDate = DateTime.Now
                     },
                     Description = "Journalist Eddie Brock bonds with an alien symbiote, becoming the anti-hero Venom.",
@@ -86,7 +86,7 @@ namespace Homework2.Models
                     {
 
                         Name = "oppenheimer.webp",
-                        Path = "img/oppenheimer.webp",
+                        Path = "/img/oppenheimer.webp",
                         UploadDate = DateTime.Now
                     },
                     Description = "The story of J. Robert Oppenheimer and the creation of the atomic bomb.",
@@ -102,7 +102,7 @@ namespace Homework2.Models
                     {
 
                         Name = "the hobbit.webp",
-                        Path = "img/the hobbit.webp",
+                        Path = "/img/the hobbit.webp",
                         UploadDate = DateTime.Now
                     },
                     Description = "Bilbo Baggins embarks on a journey with dwarves to reclaim their homeland.",
@@ -118,7 +118,7 @@ namespace Homework2.Models
                     {
 
                         Name = "the avengers.webp",
-                        Path = "img/the avengers.webp",
+                        Path = "/img/the avengers.webp",
                         UploadDate = DateTime.Now
                     },
                     Description = "Earth's mightiest heroes unite to stop Loki and his alien army.",
@@ -134,7 +134,7 @@ namespace Homework2.Models
                     {
 
                         Name = "harry potter.webp",
-                        Path = "img/harry potter.webp",
+                        Path = "/img/harry potter.webp",
                         UploadDate = DateTime.Now
                     },
                     Description = "A young boy discovers he is a wizard and attends Hogwarts School of Witchcraft.",
@@ -150,7 +150,7 @@ namespace Homework2.Models
                     {
 
                         Name = "beatiful boy.webp",
-                        Path = "img/beatiful boy.webp",
+                        Path = "/img/beatiful boy.webp",
                         UploadDate = DateTime.Now
                     },
                     Description = "A father struggles to help his son through addiction and recovery.",
@@ -166,7 +166,7 @@ namespace Homework2.Models
                     {
 
                         Name = "pirates of the Caribbean.webp",
-                        Path = "img/pirates of the Caribbean.webp",
+                        Path = "/img/pirates of the Caribbean.webp",
                         UploadDate = DateTime.Now
                     },
                     Description = "Captain Jack Sparrow teams up to rescue a kidnapped maiden from cursed pirates.",

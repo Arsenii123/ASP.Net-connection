@@ -15,26 +15,25 @@ public class MovieController : Controller
     }
 
     // GET: MOVIES
-    public async Task<IActionResult> Index()    
+    public async Task<IActionResult> Index()
     {
-        return View(await _context.Movies.ToListAsync());
+        return View(await _context.Movies
+            .Include(m => m.Poster)
+            .ToListAsync());
     }
+
+
 
     // GET: MOVIES/Details/5
     public async Task<IActionResult> Details(int? id)
     {
-        if (id == null)
-        {
-            return NotFound();
-        }
+        if (id == null) return NotFound();
 
         var movie = await _context.Movies
+            .Include(m => m.Poster)
             .FirstOrDefaultAsync(m => m.Id == id);
-        if (movie == null)
-        {
-            return NotFound();
-        }
 
+        if (movie == null) return NotFound();
         return View(movie);
     }
 
@@ -89,16 +88,14 @@ public class MovieController : Controller
     // GET: MOVIES/Edit/5
     public async Task<IActionResult> Edit(int? id)
     {
-        if (id == null)
-        {
-            return NotFound();
-        }
+        if (id == null) return NotFound();
 
-        var movie = await _context.Movies.FindAsync(id);
-        if (movie == null)
-        {
-            return NotFound();
-        }
+        var movie = await _context.Movies
+            .Include(m => m.Poster)
+            .FirstOrDefaultAsync(m => m.Id == id);
+
+        if (movie == null) return NotFound();
+
         return View(movie);
     }
 
@@ -107,51 +104,93 @@ public class MovieController : Controller
     // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int? id, [Bind("Id,Name,Director,Genre,Poster,Description,Age")] Movie movie)
+    public async Task<IActionResult> Edit(int id, Movie movie, IFormFile? posterFile)
     {
         if (id != movie.Id)
         {
             return NotFound();
         }
 
+        // Загружаем фильм из базы вместе с постером
+        var movieInDb = await _context.Movies
+            .Include(m => m.Poster)
+            .FirstOrDefaultAsync(m => m.Id == id);
+
+        if (movieInDb == null)
+        {
+            return NotFound();
+        }
+
         if (ModelState.IsValid)
         {
+            // Обновляем обычные поля
+            movieInDb.Name = movie.Name;
+            movieInDb.Director = movie.Director;
+            movieInDb.Genre = movie.Genre;
+            movieInDb.Description = movie.Description;
+            movieInDb.Age = movie.Age;
+
+            // Если загрузили новый файл — меняем постер
+            if (posterFile != null && posterFile.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(_appEnvironment.WebRootPath, "img");
+                Directory.CreateDirectory(uploadsFolder);
+
+                var uniqueName = Guid.NewGuid() + "_" + Path.GetFileName(posterFile.FileName);
+                var filePath = Path.Combine(uploadsFolder, uniqueName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await posterFile.CopyToAsync(stream);
+                }
+
+                // Создаём новый FileModel
+                var newPoster = new FileModel
+                {
+                    Name = posterFile.FileName,
+                    Path = "/img/" + uniqueName,
+                    UploadDate = DateTime.Now
+                };
+
+                // Можно удалить старый файл с диска (по желанию)
+                // if (movieInDb.Poster != null)
+                // {
+                //     var oldPath = Path.Combine(_appEnvironment.WebRootPath, movieInDb.Poster.Path.TrimStart('/'));
+                //     if (System.IO.File.Exists(oldPath))
+                //         System.IO.File.Delete(oldPath);
+                // }
+
+                movieInDb.Poster = newPoster;
+            }
+
             try
             {
-                _context.Update(movie);
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
                 if (!MovieExists(movie.Id))
-                {
                     return NotFound();
-                }
                 else
-                {
                     throw;
-                }
             }
+
             return RedirectToAction(nameof(Index));
         }
+
         return View(movie);
     }
 
     // GET: MOVIES/Delete/5
     public async Task<IActionResult> Delete(int? id)
     {
-        if (id == null)
-        {
-            return NotFound();
-        }
+        if (id == null) return NotFound();
 
         var movie = await _context.Movies
+            .Include(m => m.Poster)
             .FirstOrDefaultAsync(m => m.Id == id);
-        if (movie == null)
-        {
-            return NotFound();
-        }
 
+        if (movie == null) return NotFound();
         return View(movie);
     }
 
@@ -174,6 +213,7 @@ public class MovieController : Controller
     {
         return _context.Movies.Any(e => e.Id == id);
     }
+
 
 
 }
