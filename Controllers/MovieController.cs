@@ -6,14 +6,12 @@ using Homework2.Models;
 public class MovieController : Controller
 {
     private readonly MovieContext _context;
-    private readonly ApplicationContext _contextFile; // контекст бази даних, інжектується через DI
-    private readonly IWebHostEnvironment _appEnvironment; // !!! середовище хостингу, потрібне для доступу до wwwroot
+    private readonly IWebHostEnvironment _appEnvironment;
 
-    public MovieController(MovieContext context, ApplicationContext contextFile, IWebHostEnvironment appEnvironment)
+    public MovieController(MovieContext context, IWebHostEnvironment appEnvironment)
     {
         _context = context;
-        _context = context; // зберігаємо контекст для подальшої роботи
-        _appEnvironment = appEnvironment; // зберігаємо середовище для роботи з файлами
+        _appEnvironment = appEnvironment;
     }
 
     // GET: MOVIES
@@ -51,14 +49,40 @@ public class MovieController : Controller
     // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([Bind("Id,Name,Director,Genre,Poster,Description,Age")] Movie movie)
+    public async Task<IActionResult> Create(Movie movie, IFormFile? posterFile)
     {
         if (ModelState.IsValid)
         {
-            _context.Add(movie);
+            if (posterFile != null && posterFile.Length > 0)
+            {
+                // Папка wwwroot/img
+                var uploadsFolder = Path.Combine(_appEnvironment.WebRootPath, "img");
+                Directory.CreateDirectory(uploadsFolder);
+
+                var uniqueName = Guid.NewGuid() + "_" + Path.GetFileName(posterFile.FileName);
+                var filePath = Path.Combine(uploadsFolder, uniqueName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await posterFile.CopyToAsync(stream);
+                }
+
+                var fileModel = new FileModel
+                {
+                    Name = posterFile.FileName,
+                    Path = "/img/" + uniqueName,   // ← путь для браузера
+                    UploadDate = DateTime.Now
+                };
+
+                movie.Poster = fileModel;
+            }
+
+            _context.Movies.Add(movie);
             await _context.SaveChangesAsync();
+
             return RedirectToAction(nameof(Index));
         }
+
         return View(movie);
     }
 
@@ -150,48 +174,6 @@ public class MovieController : Controller
     {
         return _context.Movies.Any(e => e.Id == id);
     }
-    [HttpPost] // POST-запит
-    public async Task<IActionResult> AddFile(List<IFormFile> uploadedFiles)
-    {
-        if (uploadedFiles == null || !uploadedFiles.Any() || uploadedFiles.All(f => f.Length == 0))
-        {
-            TempData["Error"] = "Будь ласка, оберіть хоча б один файл!";
-            return RedirectToAction("Index"); // вью індекса зверху іфами перехоплює успішність або неуспішність завантаження файлів
-        }
 
-        var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
-        Directory.CreateDirectory(uploadsFolder); // створюємо папку, якщо немає
 
-        foreach (var file in uploadedFiles)
-        {
-            if (file.Length > 0)
-            {
-                var fileName = Path.GetFileName(file.FileName);
-                var filePath = Path.Combine(uploadsFolder, Guid.NewGuid() + "_" + fileName);
-
-                using (var stream = new FileStream(filePath, FileMode.Create))
-                {
-                    await file.CopyToAsync(stream);
-                }
-
-                // зберігаємо в базу
-                var fileModel = new FileModel
-                {
-                    Name = fileName,
-                    Path = "/img/" + Path.GetFileName(filePath),
-                    UploadDate = DateTime.Now
-                };
-
-                _contextFile.Files.Add(fileModel); // додаємо файли в контекст (Files - це властивість в ApplicationContext)
-            }
-        }
-
-        await _context.SaveChangesAsync(); // це обов’язковий рядок, без якого ніякі дані в базу НЕ запишуться, хоча ми начебто тільки-но додали їх через _context.Files.Add(fileModel).
-                                           // _context.Files.Add(fileModel) — просто каже Entity Framework: oсь новий об'єкт, я хочу його додати в базу пізніше.
-                                           // але він поки що лежить тільки в пам'яті (в так званому Change Tracker).
-                                           // await _context.SaveChangesAsync(); — це команда: а от тепер дійсно виконай всі накопичені зміни і відправ їх у базу даних» (згенеруй і виконай SQL-команди INSERT)
-
-        TempData["Success"] = "Файли успішно завантажено!";
-        return RedirectToAction("Index");
-    }
 }

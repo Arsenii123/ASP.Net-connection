@@ -7,9 +7,13 @@
 <div class="details-page">
     <div class="details-card">
         <div class="details-header">
-            @if (!string.IsNullOrEmpty(Model.Poster))
+            @if (Model.Poster != null)
             {
-                <img src="@Model.Poster" alt="@Model.Name" class="details-poster" />
+                <img src="@Model.Poster.Path" alt="@Model.Poster.Name" class="gallery-image" />
+            }
+            else
+            {
+                <span>—</span>
             }
             <div class="details-info">
                 <h1>@Model.Name</h1>

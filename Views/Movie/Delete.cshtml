@@ -10,9 +10,13 @@
         <p class="delete-warning">Are you sure you want to delete this movie?</p>
 
         <div class="delete-info">
-            @if (!string.IsNullOrEmpty(Model.Poster))
+            @if (Model.Poster != null)
             {
-                <img src="@Model.Poster" alt="@Model.Name" class="delete-poster" />
+                <img src="@Model.Poster.Path" alt="@Model.Poster.Name" class="gallery-image" />
+            }
+            else
+            {
+                <span>—</span>
             }
             <div>
                 <h2>@Model.Name</h2>

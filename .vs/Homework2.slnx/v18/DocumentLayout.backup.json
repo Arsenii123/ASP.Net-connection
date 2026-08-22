@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\views\\movie\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:views\\movie\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\views\\movie\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:views\\movie\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\views\\movie\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:views\\movie\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\views\\movie\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:views\\movie\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\models\\moviecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:models\\moviecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\views\\movie\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:views\\movie\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\models\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,40 +51,12 @@
       "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\models\\moviecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:models\\moviecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\views\\movie\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:views\\movie\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\views\\movie\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:views\\movie\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\views\\movie\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:views\\movie\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\views\\movie\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:views\\movie\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\views\\movie\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:views\\movie\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -98,98 +98,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-21T14:05:19.534Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FileModel.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Models\\FileModel.cs",
-              "RelativeDocumentMoniker": "Models\\FileModel.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Models\\FileModel.cs",
-              "RelativeToolTip": "Models\\FileModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-21T13:57:41.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Views\\Movie\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Movie\\Create.cshtml",
               "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Views\\Movie\\Create.cshtml",
               "RelativeToolTip": "Views\\Movie\\Create.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACgAAABgAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwD0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-08-19T18:50:14.563Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Movie.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Models\\Movie.cs",
-              "RelativeDocumentMoniker": "Models\\Movie.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Models\\Movie.cs",
-              "RelativeToolTip": "Models\\Movie.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-17T15:26:50.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MovieContext.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Models\\MovieContext.cs",
               "RelativeDocumentMoniker": "Models\\MovieContext.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Models\\MovieContext.cs",
               "RelativeToolTip": "Models\\MovieContext.cs",
-              "ViewState": "AgIAAI8AAAAAAAAAAAAqwKQAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-17T15:36:42.363Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Views\\Movie\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Movie\\Details.cshtml",
               "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Views\\Movie\\Details.cshtml",
               "RelativeToolTip": "Views\\Movie\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-08-19T18:50:29.89Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Views\\Movie\\Delete.cshtml",
               "RelativeDocumentMoniker": "Views\\Movie\\Delete.cshtml",
               "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Views\\Movie\\Delete.cshtml",
               "RelativeToolTip": "Views\\Movie\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-08-19T18:50:25.701Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
@@ -197,12 +158,11 @@
               "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-17T19:43:31.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-17T19:43:31.574Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -210,12 +170,11 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-17T19:14:49.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-17T19:14:49.401Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "ApplicationContext.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Models\\ApplicationContext.cs",
               "RelativeDocumentMoniker": "Models\\ApplicationContext.cs",
@@ -223,60 +182,95 @@
               "RelativeToolTip": "Models\\ApplicationContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-21T14:00:28.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-21T14:00:28.348Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "MovieController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Controllers\\MovieController.cs",
               "RelativeDocumentMoniker": "Controllers\\MovieController.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Controllers\\MovieController.cs*",
-              "RelativeToolTip": "Controllers\\MovieController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Controllers\\MovieController.cs",
+              "RelativeToolTip": "Controllers\\MovieController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAmwFYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-19T18:48:25.118Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Views\\Movie\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Movie\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Views\\Movie\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Movie\\Edit.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwD8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-19T18:50:32.289Z",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T15:04:57.632Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Views\\Movie\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Movie\\Index.cshtml",
               "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Views\\Movie\\Index.cshtml",
               "RelativeToolTip": "Views\\Movie\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-08-19T18:50:35.326Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA8AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-17T15:04:57.632Z",
+              "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Views\\Movie\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Movie\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Views\\Movie\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Movie\\Edit.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAD8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-19T18:50:32.289Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Movie.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Models\\Movie.cs",
+              "RelativeDocumentMoniker": "Models\\Movie.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Models\\Movie.cs",
+              "RelativeToolTip": "Models\\Movie.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T15:26:50.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FileModel.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Models\\FileModel.cs",
+              "RelativeDocumentMoniker": "Models\\FileModel.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Models\\FileModel.cs",
+              "RelativeToolTip": "Models\\FileModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-21T13:57:41.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-21T14:05:19.534Z"
             },
             {
               "$type": "Document",

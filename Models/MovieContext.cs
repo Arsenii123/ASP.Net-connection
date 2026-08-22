@@ -2,15 +2,17 @@
 
 namespace Homework2.Models
 {
-    public class MovieContext : DbContext
-    {
-        public DbSet<Movie> Movies { get; set; } // набір сутностей Student, який буде відображено в таблицю Students (ORM)
-        public MovieContext(DbContextOptions<MovieContext> options) // конструктор, що приймає параметри підключення
-        // options буде отриманий із Program.cs завдяки механізму впровадження залежностей (Dependency Injection)
-           : base(options) // передаємо параметри базовому класу DbContext
+
+       
+        public class MovieContext : DbContext
         {
-            if (Database.EnsureCreated()) // якщо база даних ще не створена — створюємо її (одноразово)
+            public DbSet<Movie> Movies { get; set; }
+            public DbSet<FileModel> Files { get; set; }   // ← добавили
+
+            public MovieContext(DbContextOptions<MovieContext> options) : base(options)
             {
+                if (Database.EnsureCreated())
+                {
                 Movies?.Add(new Movie
                 {
                     Name = "Interstellar",
@@ -18,7 +20,7 @@ namespace Homework2.Models
                     Genre = "Sci-Fi",
                     Poster = new FileModel
                     {
-                     
+
                         Name = "intersteller.webp",
                         Path = "img/intersteller.webp",
                         UploadDate = DateTime.Now
@@ -34,7 +36,7 @@ namespace Homework2.Models
                     Genre = "Sci-Fi",
                     Poster = new FileModel
                     {
-                       
+
                         Name = "avatar.webp",
                         Path = "img/avatar.webp",
                         UploadDate = DateTime.Now
@@ -50,7 +52,7 @@ namespace Homework2.Models
                     Genre = "Superhero",
                     Poster = new FileModel
                     {
-                       
+
                         Name = "spider-man.webp",
                         Path = "img/spider-man.webp",
                         UploadDate = DateTime.Now
@@ -66,7 +68,7 @@ namespace Homework2.Models
                     Genre = "Superhero",
                     Poster = new FileModel
                     {
-                      
+
                         Name = "venom.webp",
                         Path = "img/venom.webp",
                         UploadDate = DateTime.Now
@@ -82,7 +84,7 @@ namespace Homework2.Models
                     Genre = "Biography",
                     Poster = new FileModel
                     {
-                      
+
                         Name = "oppenheimer.webp",
                         Path = "img/oppenheimer.webp",
                         UploadDate = DateTime.Now
@@ -98,7 +100,7 @@ namespace Homework2.Models
                     Genre = "Fantasy",
                     Poster = new FileModel
                     {
-                       
+
                         Name = "the hobbit.webp",
                         Path = "img/the hobbit.webp",
                         UploadDate = DateTime.Now
@@ -114,7 +116,7 @@ namespace Homework2.Models
                     Genre = "Superhero",
                     Poster = new FileModel
                     {
-                      
+
                         Name = "the avengers.webp",
                         Path = "img/the avengers.webp",
                         UploadDate = DateTime.Now
@@ -130,7 +132,7 @@ namespace Homework2.Models
                     Genre = "Fantasy",
                     Poster = new FileModel
                     {
-                      
+
                         Name = "harry potter.webp",
                         Path = "img/harry potter.webp",
                         UploadDate = DateTime.Now
@@ -146,7 +148,7 @@ namespace Homework2.Models
                     Genre = "Drama",
                     Poster = new FileModel
                     {
-                       
+
                         Name = "beatiful boy.webp",
                         Path = "img/beatiful boy.webp",
                         UploadDate = DateTime.Now
@@ -162,7 +164,7 @@ namespace Homework2.Models
                     Genre = "Adventure",
                     Poster = new FileModel
                     {
-                     
+
                         Name = "pirates of the Caribbean.webp",
                         Path = "img/pirates of the Caribbean.webp",
                         UploadDate = DateTime.Now
@@ -173,8 +175,12 @@ namespace Homework2.Models
 
 
 
-                SaveChanges(); // зберігаємо початкові дані в базу
+                SaveChanges();
+                SaveChanges();
+                }
             }
         }
     }
-}
+
+
+

@@ -7,52 +7,43 @@
 <div class="form-page">
     <div class="form-card">
         <h1 class="form-title">Create Movie</h1>
-        <p class="form-subtitle">Add a new movie to the collection</p>
 
-        <form asp-action="Create">
+        <form asp-action="Create" method="post" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="form-group">
                 <label asp-for="Name"></label>
-                <input asp-for="Name" class="form-control" placeholder="Movie title" />
+                <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <label asp-for="Director"></label>
-                <input asp-for="Director" class="form-control" placeholder="Director name" />
+                <input asp-for="Director" class="form-control" />
                 <span asp-validation-for="Director" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <label asp-for="Genre"></label>
-                <input asp-for="Genre" class="form-control" placeholder="Genre" />
+                <input asp-for="Genre" class="form-control" />
                 <span asp-validation-for="Genre" class="text-danger"></span>
             </div>
 
+            <!-- Постер -->
             <div class="form-group">
-                <label asp-for="Poster"></label>
-                <form asp-action="AddFile" asp-controller="Movie" method="post" enctype="multipart/form-data">
-                    <input type="file"
-                           name="uploadedFiles"
-                           class="form-control"
-                           multiple />
-                    <div class="buttons">
-                        <button type="submit" class="btn">Завантажити всі вибрані файли</button>
-                    </div>
-                </form>
-                <span asp-validation-for="Poster" class="text-danger"></span>
+                <label>Poster</label>
+                <input type="file" name="posterFile" class="form-control" accept="image/*" />
             </div>
 
             <div class="form-group">
                 <label asp-for="Description"></label>
-                <textarea asp-for="Description" class="form-control" rows="4" placeholder="Short description"></textarea>
+                <textarea asp-for="Description" class="form-control" rows="4"></textarea>
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <label asp-for="Age"></label>
-                <input asp-for="Age" class="form-control" placeholder="Age rating" />
+                <input asp-for="Age" class="form-control" />
                 <span asp-validation-for="Age" class="text-danger"></span>
             </div>
 
