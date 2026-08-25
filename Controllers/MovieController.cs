@@ -48,41 +48,53 @@ public class MovieController : Controller
     // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create(Movie movie, IFormFile? posterFile)
+    public async Task<IActionResult> Create(
+        [Bind("Name,Director,Genre,Description,Age")] Movie movie,   // ← добавил Age
+        IFormFile? posterFile)
     {
-        if (ModelState.IsValid)
+        // Проверка файла
+        if (posterFile == null || posterFile.Length == 0)
         {
-            if (posterFile != null && posterFile.Length > 0)
-            {
-                // Папка wwwroot/img
-                var uploadsFolder = Path.Combine(_appEnvironment.WebRootPath, "img");
-                Directory.CreateDirectory(uploadsFolder);
-
-                var uniqueName = Guid.NewGuid() + "_" + Path.GetFileName(posterFile.FileName);
-                var filePath = Path.Combine(uploadsFolder, uniqueName);
-
-                using (var stream = new FileStream(filePath, FileMode.Create))
-                {
-                    await posterFile.CopyToAsync(stream);
-                }
-
-                var fileModel = new FileModel
-                {
-                    Name = posterFile.FileName,
-                    Path = "/img/" + uniqueName,   // ← путь для браузера
-                    UploadDate = DateTime.Now
-                };
-
-                movie.Poster = fileModel;
-            }
-
-            _context.Movies.Add(movie);
-            await _context.SaveChangesAsync();
-
-            return RedirectToAction(nameof(Index));
+            ModelState.AddModelError("", "Будь ласка, виберіть файл постера");
         }
 
-        return View(movie);
+        // Проверка названия и режисера
+        if (!string.IsNullOrEmpty(movie.Name) && movie.Name == movie.Director)
+        {
+            ModelState.AddModelError("", "Назва фільму і режисер не можуть збігатися");
+        }
+
+        if (!ModelState.IsValid)
+        {
+            return View(movie);
+        }
+
+        // Сохраняем файл
+        var uploadsFolder = Path.Combine(_appEnvironment.WebRootPath, "img");
+        Directory.CreateDirectory(uploadsFolder);
+
+        var uniqueName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(posterFile.FileName);
+        var filePath = Path.Combine(uploadsFolder, uniqueName);
+
+        using (var stream = new FileStream(filePath, FileMode.Create))
+        {
+            await posterFile.CopyToAsync(stream);
+        }
+
+        // Создаём FileModel
+        var fileModel = new FileModel
+        {
+            Name = posterFile.FileName,
+            Path = "/img/" + uniqueName,
+            UploadDate = DateTime.Now
+        };
+
+        movie.Poster = fileModel;
+
+        _context.Movies.Add(movie);
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction(nameof(Index));
     }
 
     // GET: MOVIES/Edit/5

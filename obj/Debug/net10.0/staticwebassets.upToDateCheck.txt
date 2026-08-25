@@ -1,10 +1,13 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\img\3e7c3528-b8e3-4042-bdb0-63f0c5b41ed5_harry potter.webp
+wwwroot\img\47d3227f-6103-4bc1-856b-16988e4eeda6_harry potter.webp
 wwwroot\img\8526cb12-2a53-4838-ba9d-dd1eca810ac9_the hobbit.webp
 wwwroot\img\9f880175-014c-4522-80db-2b3386414544_intersteller.webp
 wwwroot\img\avatar.webp
+wwwroot\img\b94f6dd8-36e7-4447-82f0-443cdaf5dc60_harry potter.webp
 wwwroot\img\beatiful boy.webp
+wwwroot\img\e7810f71-f87a-463f-8ce1-5b13bf004463_pirates of the Caribbean.webp
 wwwroot\img\ffd340e6-1e05-422e-9720-54e858c1aa0f_harry potter.webp
 wwwroot\img\harry potter.webp
 wwwroot\img\intersteller.webp
