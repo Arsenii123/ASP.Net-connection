@@ -6,8 +6,9 @@ namespace Homework2.Services.Extensions
     {
         public static void AddServices(this IServiceCollection services)
         {
-            services.AddTransient<IMyService,FirstService>();
-            services.AddTransient<IMyService2, SecondService>();
+            services.AddTransient<ICreate,CreateService>();
+            services.AddTransient<IEdit, EditService>();
+            services.AddTransient<IDelete, DeleteService>();
         }
 
     }

@@ -5,18 +5,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Homework2.Services
 {
-    public class  FirstService:IMyService
+    public class  CreateService:ICreate
     {
         public Guid Id { get; }
         private readonly MovieContext _context;
         private readonly IWebHostEnvironment _appEnvironment;
-        public FirstService(MovieContext context, IWebHostEnvironment appEnvironmen)
+        public CreateService(MovieContext context, IWebHostEnvironment appEnvironmen)
         {
             Id= Guid.NewGuid();
             _context= context;
             _appEnvironment= appEnvironmen;
         }
-        public async Task ToDo([Bind("Name,Director,Genre,Description,Age")] Movie movie,   // ← добавил Age
+        public async Task Create([Bind("Name,Director,Genre,Description,Age")] Movie movie,   // ← добавил Age
         IFormFile? posterFile)
         {
             var uploadsFolder = Path.Combine(_appEnvironment.WebRootPath, "img");

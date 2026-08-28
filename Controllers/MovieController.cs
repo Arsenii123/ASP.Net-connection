@@ -12,19 +12,22 @@ using Microsoft.EntityFrameworkCore;
 public class MovieController : Controller
 {
     private readonly MovieContext _context;
-    private IMyService fieldService;
-    private IMyService2 myService2;
+    private ICreate fieldService;
+    private IEdit myService2;
+
+    private IDelete myService3;
 
     /// <summary>
     /// Ініціалізує новий екземпляр <see cref="MovieController"/>.
     /// </summary>
     /// <param name="context">Контекст бази даних для роботи з фільмами.</param>
     /// <param name="appEnvironment">Середовище хостингу для доступу до файлової системи (wwwroot).</param>
-    public MovieController(MovieContext context,IMyService service, IMyService2 service2)
+    public MovieController(MovieContext context,ICreate service, IEdit service2, IDelete service3)
     {
         _context = context;
         fieldService = service;
         myService2 = service2;
+        myService3 = service3;
     }
 
     /// <summary>
@@ -98,7 +101,7 @@ public class MovieController : Controller
         {
             return View(movie);
         }
-        await fieldService.ToDo(movie, posterFile);
+        await fieldService.Create(movie, posterFile);
 
         return RedirectToAction(nameof(Index));
     }
@@ -154,7 +157,7 @@ public class MovieController : Controller
         if (ModelState.IsValid)
         {
             // Обновляем обычные поля
-           await  myService2.ToDo(id, movie, posterFile);
+           await  myService2.Edit(id, movie, posterFile);
 
             try
             {
@@ -200,15 +203,9 @@ public class MovieController : Controller
     // POST: MOVIES/Delete/5
     [HttpPost, ActionName("Delete")]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> DeleteConfirmed(int? id)
+    public async Task<IActionResult> DeleteConfirmed(int?  id)
     {
-        var movie = await _context.Movies.FindAsync(id);
-        if (movie != null)
-        {
-            _context.Movies.Remove(movie);
-        }
-
-        await _context.SaveChangesAsync();
+        await myService3.Delete(id);
         return RedirectToAction(nameof(Index));
     }
 
