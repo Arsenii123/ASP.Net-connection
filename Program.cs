@@ -1,8 +1,10 @@
 using Microsoft.EntityFrameworkCore;
+using Homework2.Services.Extensions;
 namespace Homework2
 {
     using global::Homework2.Models;
     using Microsoft.EntityFrameworkCore;
+
 
     namespace Homework2
     {
@@ -19,6 +21,8 @@ namespace Homework2
                 // ApplicationContext больше не регистрируем
 
                 builder.Services.AddControllersWithViews();
+                builder.Services.AddServices();
+ 
 
                 var app = builder.Build();
 

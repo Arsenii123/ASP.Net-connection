@@ -1,16 +1,31 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Homework2.Controllers
-{
-    public class HomeController : Controller
+
+
+    namespace Homework2.Controllers
     {
-        public IActionResult Index()
+        /// <summary>
+        /// Стандартний контролер головної сторінки додатку.
+        /// </summary>
+        public class HomeController : Controller
         {
-            return View();
-        }
-        public IActionResult Privacy()
-        {
-            return View();
+            /// <summary>
+            /// Відображає головну сторінку.
+            /// </summary>
+            /// <returns>Представлення Index.</returns>
+            public IActionResult Index()
+            {
+                return View();
+            }
+
+            /// <summary>
+            /// Відображає сторінку політики конфіденційності.
+            /// </summary>
+            /// <returns>Представлення Privacy.</returns>
+            public IActionResult Privacy()
+            {
+                return View();
+            }
         }
     }
-}
+
