@@ -98,7 +98,7 @@ public class MovieController : Controller
         {
             return View(movie);
         }
-        fieldService.ToDo(movie, posterFile);
+        await fieldService.ToDo(movie, posterFile);
 
         return RedirectToAction(nameof(Index));
     }
@@ -154,7 +154,7 @@ public class MovieController : Controller
         if (ModelState.IsValid)
         {
             // Обновляем обычные поля
-            myService2.ToDo(id, movie, posterFile);
+           await  myService2.ToDo(id, movie, posterFile);
 
             try
             {
