@@ -31,13 +31,11 @@ namespace Homework2.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task<Movie> Get(int id)
+        public async Task<Movie?> Get(int id)
         {
-            var movieInDb = await _context.Movies
+            return await _context.Movies
                 .Include(m => m.Poster)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            return movieInDb;
-
         }
 
         public async Task Set(int id,Movie movie)

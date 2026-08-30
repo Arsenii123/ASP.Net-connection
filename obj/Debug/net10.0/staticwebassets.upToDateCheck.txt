@@ -1,5 +1,33 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\img\01f630c8-bce3-41a6-aac1-4bcd0991311f_the avengers.webp
+wwwroot\img\0200ff13-de4d-4f90-82ac-e8514bed01c9_intersteller.webp
+wwwroot\img\073dd21c-aee4-42e1-9f08-b32afe73d604_harry potter.webp
+wwwroot\img\0b7f1b78-7416-4822-9adc-42ed9c06b24e_the hobbit.webp
+wwwroot\img\3e7c3528-b8e3-4042-bdb0-63f0c5b41ed5_harry potter.webp
+wwwroot\img\47d3227f-6103-4bc1-856b-16988e4eeda6_harry potter.webp
+wwwroot\img\7faeb58e-cf11-4ec8-b0d8-83b9b1bf5569_harry potter.webp
+wwwroot\img\8526cb12-2a53-4838-ba9d-dd1eca810ac9_the hobbit.webp
+wwwroot\img\8de30068-fa58-4401-90d3-36ffa260e136_the avengers.webp
+wwwroot\img\97d21924-be9e-491b-bdf1-47728dc4c0e4_moneta.jpg
+wwwroot\img\99f785f2-8e11-4380-921a-00ad28ae8f3f_harry potter.webp
+wwwroot\img\9f880175-014c-4522-80db-2b3386414544_intersteller.webp
+wwwroot\img\9fc91686-7aa9-4ffa-8867-70a291281cae_Group (4).png
+wwwroot\img\avatar.webp
+wwwroot\img\b94f6dd8-36e7-4447-82f0-443cdaf5dc60_harry potter.webp
+wwwroot\img\beatiful boy.webp
+wwwroot\img\e28c8d87-f10d-425d-b112-a4ddfb645bff_harry potter.webp
+wwwroot\img\e7810f71-f87a-463f-8ce1-5b13bf004463_pirates of the Caribbean.webp
+wwwroot\img\fa77a5b8-ea7e-4daa-93d1-aadcd5ca7536_the avengers.webp
+wwwroot\img\ffd340e6-1e05-422e-9720-54e858c1aa0f_harry potter.webp
+wwwroot\img\harry potter.webp
+wwwroot\img\intersteller.webp
+wwwroot\img\oppenheimer.webp
+wwwroot\img\pirates of the Caribbean.webp
+wwwroot\img\spider-man.webp
+wwwroot\img\the avengers.webp
+wwwroot\img\the hobbit.webp
+wwwroot\img\venom.webp
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -61,32 +89,6 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\img\avatar.webp
-wwwroot\img\harry potter.webp
-wwwroot\img\intersteller.webp
-wwwroot\img\oppenheimer.webp
-wwwroot\img\pirates of the Caribbean.webp
-wwwroot\img\spider-man.webp
-wwwroot\img\the avengers.webp
-wwwroot\img\the hobbit.webp
-wwwroot\img\venom.webp
-wwwroot\img\beatiful boy.webp
-wwwroot\img\8526cb12-2a53-4838-ba9d-dd1eca810ac9_the hobbit.webp
-wwwroot\img\ffd340e6-1e05-422e-9720-54e858c1aa0f_harry potter.webp
-wwwroot\img\3e7c3528-b8e3-4042-bdb0-63f0c5b41ed5_harry potter.webp
-wwwroot\img\9f880175-014c-4522-80db-2b3386414544_intersteller.webp
-wwwroot\img\47d3227f-6103-4bc1-856b-16988e4eeda6_harry potter.webp
-wwwroot\img\e7810f71-f87a-463f-8ce1-5b13bf004463_pirates of the Caribbean.webp
-wwwroot\img\b94f6dd8-36e7-4447-82f0-443cdaf5dc60_harry potter.webp
-wwwroot\img\073dd21c-aee4-42e1-9f08-b32afe73d604_harry potter.webp
-wwwroot\img\7faeb58e-cf11-4ec8-b0d8-83b9b1bf5569_harry potter.webp
-wwwroot\img\e28c8d87-f10d-425d-b112-a4ddfb645bff_harry potter.webp
-wwwroot\img\97d21924-be9e-491b-bdf1-47728dc4c0e4_moneta.jpg
-wwwroot\img\0b7f1b78-7416-4822-9adc-42ed9c06b24e_the hobbit.webp
-wwwroot\img\0200ff13-de4d-4f90-82ac-e8514bed01c9_intersteller.webp
-wwwroot\img\99f785f2-8e11-4380-921a-00ad28ae8f3f_harry potter.webp
-wwwroot\img\8de30068-fa58-4401-90d3-36ffa260e136_the avengers.webp
-wwwroot\img\9fc91686-7aa9-4ffa-8867-70a291281cae_Group (4).png
 C:\Users\PC\Desktop\ASP-NET\Homework2\wwwroot\css\site.css
 C:\Users\PC\Desktop\ASP-NET\Homework2\wwwroot\favicon.ico
 C:\Users\PC\Desktop\ASP-NET\Homework2\wwwroot\js\site.js

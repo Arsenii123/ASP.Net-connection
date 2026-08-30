@@ -116,9 +116,7 @@ public class MovieController : Controller
     {
         if (id == null) return NotFound();
 
-        var movie = await _context.Movies
-            .Include(m => m.Poster)
-            .FirstOrDefaultAsync(m => m.Id == id);
+        var movie = await myService4.Details(id);
 
         if (movie == null) return NotFound();
 
@@ -145,9 +143,7 @@ public class MovieController : Controller
         }
 
         // Загружаем фильм из базы вместе с постером
-        var movieInDb = await _context.Movies
-            .Include(m => m.Poster)
-            .FirstOrDefaultAsync(m => m.Id == id);
+        var movieInDb = myService4.Details(id);
 
         if (movieInDb == null)
         {
@@ -176,9 +172,7 @@ public class MovieController : Controller
     {
         if (id == null) return NotFound();
 
-        var movie = await _context.Movies
-            .Include(m => m.Poster)
-            .FirstOrDefaultAsync(m => m.Id == id);
+        var movie = await myService4.Details(id);
 
         if (movie == null) return NotFound();
         return View(movie);

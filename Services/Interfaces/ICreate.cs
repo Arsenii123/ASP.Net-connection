@@ -5,12 +5,8 @@ namespace Homework2.Services.Interfaces
 {
     public interface ICreate
     {
-        public async Task Create([Bind("Name,Director,Genre,Description,Age")] Movie movie,   // ← добавил Age
-        IFormFile? posterFile)
-        {
-            Console.WriteLine("Create");
+        Task Create([Bind("Name,Director,Genre,Description,Age")] Movie movie, IFormFile? posterFile);
 
-        }
 
     }
 }

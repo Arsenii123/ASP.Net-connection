@@ -11,10 +11,10 @@ namespace Homework2.Services
         public DetailsService(IRepository repository) { 
             _repository = repository;
         }
-        public async Task<Movie> Details(int? id)
+        public async Task<Movie?> Details(int? id)
         {
-            var movie = await _repository.Get(id);
-            return movie;
+            if (id == null) return null;
+            return await _repository.Get(id.Value);
         }
     }
 }

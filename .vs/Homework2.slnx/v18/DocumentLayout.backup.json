@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\repositories\\crudrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:repositories\\crudrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\services\\detailsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:services\\detailsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\services\\interfaces\\idetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:services\\interfaces\\idetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\services\\interfaces\\iedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:services\\interfaces\\iedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\services\\interfaces\\idelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:services\\interfaces\\idelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\services\\interfaces\\icreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:services\\interfaces\\icreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\repositories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,24 +39,8 @@
       "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:services\\editservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\services\\detailsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:services\\detailsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\services\\createservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:services\\createservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\services\\interfaces\\iedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:services\\interfaces\\iedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\services\\interfaces\\idetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:services\\interfaces\\idetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\services\\extensions\\serviceproviderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,14 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\services\\deleteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:services\\deleteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\services\\interfaces\\icreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:services\\interfaces\\icreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\services\\interfaces\\idelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:services\\interfaces\\idelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\models\\moviecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -138,7 +138,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -146,72 +146,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "DetailsService.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Services\\DetailsService.cs",
               "RelativeDocumentMoniker": "Services\\DetailsService.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Services\\DetailsService.cs",
               "RelativeToolTip": "Services\\DetailsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-30T13:49:44.156Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "IDetails.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Services\\Interfaces\\IDetails.cs",
               "RelativeDocumentMoniker": "Services\\Interfaces\\IDetails.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Services\\Interfaces\\IDetails.cs",
               "RelativeToolTip": "Services\\Interfaces\\IDetails.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-30T13:46:42.655Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CRUDRepository.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Repositories\\CRUDRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\CRUDRepository.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Repositories\\CRUDRepository.cs*",
-              "RelativeToolTip": "Repositories\\CRUDRepository.cs*",
-              "ViewState": "AgIAABYAAAAAAAAAAAAiwDUAAAAXAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Repositories\\CRUDRepository.cs",
+              "RelativeToolTip": "Repositories\\CRUDRepository.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAUwCYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-30T13:20:04.237Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Repositories\\Interfaces\\IRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Interfaces\\IRepository.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Repositories\\Interfaces\\IRepository.cs",
               "RelativeToolTip": "Repositories\\Interfaces\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-30T13:15:51.183Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EditService.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Services\\EditService.cs",
-              "RelativeDocumentMoniker": "Services\\EditService.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Services\\EditService.cs",
-              "RelativeToolTip": "Services\\EditService.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAqwEIAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T15:29:06.326Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "CreateService.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Services\\CreateService.cs",
               "RelativeDocumentMoniker": "Services\\CreateService.cs",
@@ -219,25 +206,24 @@
               "RelativeToolTip": "Services\\CreateService.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAzwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T15:05:13.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T15:05:13.329Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "ICreate.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Services\\Interfaces\\ICreate.cs",
               "RelativeDocumentMoniker": "Services\\Interfaces\\ICreate.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Services\\Interfaces\\ICreate.cs",
               "RelativeToolTip": "Services\\Interfaces\\ICreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-28T15:03:29.97Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "ServiceProviderExtensions.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Services\\Extensions\\ServiceProviderExtensions.cs",
               "RelativeDocumentMoniker": "Services\\Extensions\\ServiceProviderExtensions.cs",
@@ -245,25 +231,24 @@
               "RelativeToolTip": "Services\\Extensions\\ServiceProviderExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T14:58:42.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T14:58:42.033Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MovieController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Controllers\\MovieController.cs",
               "RelativeDocumentMoniker": "Controllers\\MovieController.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Controllers\\MovieController.cs*",
               "RelativeToolTip": "Controllers\\MovieController.cs*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAiwK4AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-19T18:48:25.118Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -271,34 +256,45 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-17T15:04:57.632Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-17T15:04:57.632Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "IEdit.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Services\\Interfaces\\IEdit.cs",
               "RelativeDocumentMoniker": "Services\\Interfaces\\IEdit.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Services\\Interfaces\\IEdit.cs",
               "RelativeToolTip": "Services\\Interfaces\\IEdit.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-28T15:26:51.018Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
               "Title": "IDelete.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Services\\Interfaces\\IDelete.cs",
               "RelativeDocumentMoniker": "Services\\Interfaces\\IDelete.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Services\\Interfaces\\IDelete.cs",
               "RelativeToolTip": "Services\\Interfaces\\IDelete.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-28T19:54:59.439Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EditService.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Services\\EditService.cs",
+              "RelativeDocumentMoniker": "Services\\EditService.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Services\\EditService.cs",
+              "RelativeToolTip": "Services\\EditService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAqwEIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T15:29:06.326Z"
             },
             {
               "$type": "Document",
@@ -310,12 +306,11 @@
               "RelativeToolTip": "Models\\MovieContext.cs",
               "ViewState": "AgIAAKEAAAAAAAAAAAAgwLgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-17T15:36:42.363Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-17T15:36:42.363Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "DeleteService.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Services\\DeleteService.cs",
               "RelativeDocumentMoniker": "Services\\DeleteService.cs",
@@ -323,8 +318,7 @@
               "RelativeToolTip": "Services\\DeleteService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T20:02:26.146Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T20:02:26.146Z"
             },
             {
               "$type": "Document",
@@ -348,8 +342,7 @@
               "RelativeToolTip": "Models\\Movie.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAgwEIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-17T15:26:50.333Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-17T15:26:50.333Z"
             },
             {
               "$type": "Document",

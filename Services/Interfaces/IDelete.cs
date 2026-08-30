@@ -2,9 +2,7 @@
 {
     public interface IDelete
     {
-        public async Task Delete(int? id)
-        {
-            Console.WriteLine("Delete");
-        }
+        Task Delete(int? id);
+
     }
 }
