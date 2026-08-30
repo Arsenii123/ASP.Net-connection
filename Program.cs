@@ -1,8 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using Homework2.Services.Extensions;
+using Homework2.Repositories;
+using Homework2.Repositories.Interfaces;
 namespace Homework2
 {
     using global::Homework2.Models;
+
     using Microsoft.EntityFrameworkCore;
 
 
@@ -22,7 +25,7 @@ namespace Homework2
 
                 builder.Services.AddControllersWithViews();
                 builder.Services.AddServices();
- 
+                builder.Services.AddTransient<IRepository, CRUDRepository>();
 
                 var app = builder.Build();
 

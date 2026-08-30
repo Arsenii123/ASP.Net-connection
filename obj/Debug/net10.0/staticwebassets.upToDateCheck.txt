@@ -86,6 +86,7 @@ wwwroot\img\0b7f1b78-7416-4822-9adc-42ed9c06b24e_the hobbit.webp
 wwwroot\img\0200ff13-de4d-4f90-82ac-e8514bed01c9_intersteller.webp
 wwwroot\img\99f785f2-8e11-4380-921a-00ad28ae8f3f_harry potter.webp
 wwwroot\img\8de30068-fa58-4401-90d3-36ffa260e136_the avengers.webp
+wwwroot\img\9fc91686-7aa9-4ffa-8867-70a291281cae_Group (4).png
 C:\Users\PC\Desktop\ASP-NET\Homework2\wwwroot\css\site.css
 C:\Users\PC\Desktop\ASP-NET\Homework2\wwwroot\favicon.ico
 C:\Users\PC\Desktop\ASP-NET\Homework2\wwwroot\js\site.js

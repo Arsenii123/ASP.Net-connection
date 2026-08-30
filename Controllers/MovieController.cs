@@ -17,17 +17,20 @@ public class MovieController : Controller
 
     private IDelete myService3;
 
+    private IDetails myService4;
+
     /// <summary>
     /// Ініціалізує новий екземпляр <see cref="MovieController"/>.
     /// </summary>
     /// <param name="context">Контекст бази даних для роботи з фільмами.</param>
     /// <param name="appEnvironment">Середовище хостингу для доступу до файлової системи (wwwroot).</param>
-    public MovieController(MovieContext context,ICreate service, IEdit service2, IDelete service3)
+    public MovieController(MovieContext context,ICreate service, IEdit service2, IDelete service3, IDetails service4)
     {
         _context = context;
         fieldService = service;
         myService2 = service2;
         myService3 = service3;
+        myService4= service4;
     }
 
     /// <summary>
@@ -52,10 +55,7 @@ public class MovieController : Controller
     {
         if (id == null) return NotFound();
 
-        var movie = await _context.Movies
-            .Include(m => m.Poster)
-            .FirstOrDefaultAsync(m => m.Id == id);
-
+        var movie = await myService4.Details(id);
         if (movie == null) return NotFound();
         return View(movie);
     }
@@ -159,17 +159,6 @@ public class MovieController : Controller
             // Обновляем обычные поля
            await  myService2.Edit(id, movie, posterFile);
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!MovieExists(movie.Id))
-                    return NotFound();
-                else
-                    throw;
-            }
 
             return RedirectToAction(nameof(Index));
         }

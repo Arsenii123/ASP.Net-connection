@@ -1,4 +1,5 @@
 ﻿using Homework2.Models;
+using Homework2.Repositories.Interfaces;
 using Homework2.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -7,22 +8,22 @@ namespace Homework2.Services
 {
     public class EditService:IEdit
     {
-        public Guid Id { get; }
-        private readonly MovieContext _context;
+        public Guid Id { get; }=Guid.NewGuid();
         private readonly IWebHostEnvironment _appEnvironment;
-        public EditService(MovieContext context, IWebHostEnvironment appEnvironmen)
+
+        private IRepository _repo;
+        public EditService( IWebHostEnvironment appEnvironmen,IRepository repo)
         {
             Id = Guid.NewGuid();
-            _context = context;
             _appEnvironment = appEnvironmen;
+            _repo = repo;
         }
         public async Task Edit(int id, Movie movie, IFormFile? posterFile)
         {
 
-            // Загружаем фильм из базы вместе с постером
-            var movieInDb = await _context.Movies
-                .Include(m => m.Poster)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var movieInDb = await _repo.Get(id);
+            if (movieInDb == null)
+                return;   // или throw new Exception($"Movie with id {id} not found");
             movieInDb.Name = movie.Name;
             movieInDb.Director = movie.Director;
             movieInDb.Genre = movie.Genre;
@@ -61,7 +62,9 @@ namespace Homework2.Services
                 // }
 
                 movieInDb.Poster = newPoster;
+
             }
+            await _repo.Set(id,movieInDb);
 
         }
     }

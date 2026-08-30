@@ -9,6 +9,7 @@ namespace Homework2.Services.Extensions
             services.AddTransient<ICreate,CreateService>();
             services.AddTransient<IEdit, EditService>();
             services.AddTransient<IDelete, DeleteService>();
+            services.AddTransient<IDetails,DetailsService>();
         }
 
     }
