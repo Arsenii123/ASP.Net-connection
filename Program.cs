@@ -1,10 +1,10 @@
 using Microsoft.EntityFrameworkCore;
-using Homework2.Services.Extensions;
-using Homework2.Repositories;
-using Homework2.Repositories.Interfaces;
+using BuisnessLogicPlayer.Services.Extensions;
+using DataAccess.Repositories;
+using DataAccess.Repositories.Interfaces;
 namespace Homework2
 {
-    using global::Homework2.Models;
+    using global::DataAccess.Models;
 
     using Microsoft.EntityFrameworkCore;
 

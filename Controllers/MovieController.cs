@@ -1,6 +1,6 @@
 
-using Homework2.Models;
-using Homework2.Services.Interfaces;
+using DataAccess.Models;
+using BuisnessLogicPlayer.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
