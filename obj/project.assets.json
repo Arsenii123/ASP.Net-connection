@@ -1076,27 +1076,27 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Buisness Logic  Player/1.0.0": {
+      "BuisnessLogicPlayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
-          "Data  Access": "1.0.0"
+          "DataAccess": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Buisness Logic  Player.dll": {}
+          "bin/placeholder/BuisnessLogicPlayer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Buisness Logic  Player.dll": {}
+          "bin/placeholder/BuisnessLogicPlayer.dll": {}
         }
       },
-      "Data  Access/1.0.0": {
+      "DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "compile": {
-          "bin/placeholder/Data  Access.dll": {}
+          "bin/placeholder/DataAccess.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Data  Access.dll": {}
+          "bin/placeholder/DataAccess.dll": {}
         }
       }
     }
@@ -3159,20 +3159,20 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Buisness Logic  Player/1.0.0": {
+    "BuisnessLogicPlayer/1.0.0": {
       "type": "project",
-      "path": "../Buisness Logic  Player/Buisness Logic  Player.csproj",
-      "msbuildProject": "../Buisness Logic  Player/Buisness Logic  Player.csproj"
+      "path": "BuisnesLogiсPlayer/BuisnessLogicPlayer.csproj",
+      "msbuildProject": "BuisnesLogiсPlayer/BuisnessLogicPlayer.csproj"
     },
-    "Data  Access/1.0.0": {
+    "DataAccess/1.0.0": {
       "type": "project",
-      "path": "../Data  Access/Data  Access.csproj",
-      "msbuildProject": "../Data  Access/Data  Access.csproj"
+      "path": "DatаAccess/DataAccess.csproj",
+      "msbuildProject": "DatаAccess/DataAccess.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Buisness Logic  Player >= 1.0.0",
+      "BuisnessLogicPlayer >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 10.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 10.0.11"
@@ -3211,8 +3211,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\PC\\Desktop\\ASP-NET\\Buisness Logic  Player\\Buisness Logic  Player.csproj": {
-              "projectPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Buisness Logic  Player\\Buisness Logic  Player.csproj"
+            "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\BuisnesLogiсPlayer\\BuisnessLogicPlayer.csproj": {
+              "projectPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\BuisnesLogiсPlayer\\BuisnessLogicPlayer.csproj"
             }
           }
         }

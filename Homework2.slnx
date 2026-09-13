@@ -1,5 +1,5 @@
 <Solution>
-  <Project Path="../Buisness Logic  Player/Buisness Logic  Player.csproj" Id="be32b8ae-8187-47e0-a640-7829fbae3504" />
-  <Project Path="../Data  Access/Data  Access.csproj" Id="24afea9f-a401-4833-acb8-0fc126961d62" />
+  <Project Path="BuisnesLogiсPlayer/BuisnessLogicPlayer.csproj" />
+  <Project Path="DatаAccess/DataAccess.csproj" />
   <Project Path="Homework2.csproj" />
 </Solution>

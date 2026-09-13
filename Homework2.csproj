@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Buisness Logic  Player\Buisness Logic  Player.csproj" />
+    <ProjectReference Include="BuisnesLogiсPlayer\BuisnessLogicPlayer.csproj" />
   </ItemGroup>
 
 </Project>
