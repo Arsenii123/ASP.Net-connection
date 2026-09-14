@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using BuisnessLogicPlayer.Services.Extensions;
+using BusinessLogic.Services.Extensions;
 using DataAccess.Repositories;
 using DataAccess.Repositories.Interfaces;
 namespace Homework2

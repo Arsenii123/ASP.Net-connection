@@ -1,5 +1,5 @@
 <Solution>
-  <Project Path="BuisnesLogiсPlayer/BuisnessLogicPlayer.csproj" />
-  <Project Path="DatаAccess/DataAccess.csproj" />
+  <Project Path="../BusinessLogic/BusinessLogic.csproj" />
+  <Project Path="../DataAccess/DataAccess.csproj" />
   <Project Path="Homework2.csproj" />
 </Solution>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Homework2.csproj": {}
+    "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\Homework2\\Homework2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\BuisnesLogiсPlayer\\BuisnessLogicPlayer.csproj": {
+    "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\BusinessLogic\\BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\BuisnesLogiсPlayer\\BuisnessLogicPlayer.csproj",
-        "projectName": "BuisnessLogicPlayer",
-        "projectPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\BuisnesLogiсPlayer\\BuisnessLogicPlayer.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\BusinessLogic\\BusinessLogic.csproj",
+        "projectName": "BusinessLogic",
+        "projectPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\BusinessLogic\\BusinessLogic.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\BuisnesLogiсPlayer\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\DatаAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\DatаAccess\\DataAccess.csproj"
+              "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -55,6 +55,12 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[10.0.12, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -349,14 +355,14 @@
         }
       }
     },
-    "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\DatаAccess\\DataAccess.csproj": {
+    "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\DatаAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\DatаAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\DatаAccess\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -396,6 +402,16 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[10.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[10.0.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -690,14 +706,14 @@
         }
       }
     },
-    "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Homework2.csproj": {
+    "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\Homework2\\Homework2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Homework2.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\Homework2\\Homework2.csproj",
         "projectName": "Homework2",
-        "projectPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Homework2.csproj",
+        "projectPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\Homework2\\Homework2.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\Homework2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -719,8 +735,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\BuisnesLogiсPlayer\\BuisnessLogicPlayer.csproj": {
-                "projectPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\BuisnesLogiсPlayer\\BuisnessLogicPlayer.csproj"
+              "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\BusinessLogic\\BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\BusinessLogic\\BusinessLogic.csproj"
               }
             }
           }

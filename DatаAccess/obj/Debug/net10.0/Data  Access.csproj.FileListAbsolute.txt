@@ -1,4 +1,0 @@
-C:\Users\PC\Desktop\ASP-NET\Data  Access\obj\Debug\net10.0\Data  Access.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\PC\Desktop\ASP-NET\Data  Access\obj\Debug\net10.0\Data  Access.AssemblyInfoInputs.cache
-C:\Users\PC\Desktop\ASP-NET\Data  Access\obj\Debug\net10.0\Data  Access.AssemblyInfo.cs
-C:\Users\PC\Desktop\ASP-NET\Data  Access\obj\Debug\net10.0\Data  Access.csproj.CoreCompileInputs.cache

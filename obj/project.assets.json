@@ -1076,22 +1076,26 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "BuisnessLogicPlayer/1.0.0": {
+      "BusinessLogic/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "DataAccess": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/BuisnessLogicPlayer.dll": {}
+          "bin/placeholder/BusinessLogic.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BuisnessLogicPlayer.dll": {}
+          "bin/placeholder/BusinessLogic.dll": {}
         }
       },
       "DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "10.0.11",
+          "Microsoft.EntityFrameworkCore.SqlServer": "10.0.11"
+        },
         "compile": {
           "bin/placeholder/DataAccess.dll": {}
         },
@@ -3159,20 +3163,20 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "BuisnessLogicPlayer/1.0.0": {
+    "BusinessLogic/1.0.0": {
       "type": "project",
-      "path": "BuisnesLogiсPlayer/BuisnessLogicPlayer.csproj",
-      "msbuildProject": "BuisnesLogiсPlayer/BuisnessLogicPlayer.csproj"
+      "path": "../BusinessLogic/BusinessLogic.csproj",
+      "msbuildProject": "../BusinessLogic/BusinessLogic.csproj"
     },
     "DataAccess/1.0.0": {
       "type": "project",
-      "path": "DatаAccess/DataAccess.csproj",
-      "msbuildProject": "DatаAccess/DataAccess.csproj"
+      "path": "../DataAccess/DataAccess.csproj",
+      "msbuildProject": "../DataAccess/DataAccess.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "BuisnessLogicPlayer >= 1.0.0",
+      "BusinessLogic >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 10.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 10.0.11"
@@ -3185,11 +3189,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Homework2.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\Homework2\\Homework2.csproj",
       "projectName": "Homework2",
-      "projectPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Homework2.csproj",
+      "projectPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\Homework2\\Homework2.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\Homework2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3211,8 +3215,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\BuisnesLogiсPlayer\\BuisnessLogicPlayer.csproj": {
-              "projectPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\BuisnesLogiсPlayer\\BuisnessLogicPlayer.csproj"
+            "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\BusinessLogic\\BusinessLogic.csproj": {
+              "projectPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\BusinessLogic\\BusinessLogic.csproj"
             }
           }
         }

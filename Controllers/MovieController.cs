@@ -1,6 +1,9 @@
 
-using DataAccess.Models;
+using BuisnessLogicPlayer.Services;
 using BuisnessLogicPlayer.Services.Interfaces;
+using BusinessLogic.Services;
+using BusinessLogic.Services.Interfaces;
+using DataAccess.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,18 +22,21 @@ public class MovieController : Controller
 
     private IDetails myService4;
 
+    private readonly IWebHostEnvironment _appEnvironment;
+
     /// <summary>
     /// Ініціалізує новий екземпляр <see cref="MovieController"/>.
     /// </summary>
     /// <param name="context">Контекст бази даних для роботи з фільмами.</param>
     /// <param name="appEnvironment">Середовище хостингу для доступу до файлової системи (wwwroot).</param>
-    public MovieController(MovieContext context,ICreate service, IEdit service2, IDelete service3, IDetails service4)
+    public MovieController(MovieContext context,ICreate service, IEdit service2, IDelete service3, IDetails service4, IWebHostEnvironment appEnvironment)
     {
         _context = context;
         fieldService = service;
         myService2 = service2;
         myService3 = service3;
         myService4= service4;
+        _appEnvironment= appEnvironment;
     }
 
     /// <summary>
@@ -81,29 +87,35 @@ public class MovieController : Controller
     // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create(
-        [Bind("Name,Director,Genre,Description,Age")] Movie movie,   // ← добавил Age
-        IFormFile? posterFile)
+    public async Task<IActionResult> Create(Movie movie, IFormFile? posterFile)
     {
-        // Проверка файла
-        if (posterFile == null || posterFile.Length == 0)
+        if (ModelState.IsValid)
         {
-            ModelState.AddModelError("", "Будь ласка, виберіть файл постера");
-        }
+            if (posterFile != null && posterFile.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(_appEnvironment.WebRootPath, "img");
+                Directory.CreateDirectory(uploadsFolder);
 
-        // Проверка названия и режисера
-        if (!string.IsNullOrEmpty(movie.Name) && movie.Name == movie.Director)
-        {
-            ModelState.AddModelError("", "Назва фільму і режисер не можуть збігатися");
-        }
+                var uniqueName = Guid.NewGuid() + "_" + Path.GetFileName(posterFile.FileName);
+                var filePath = Path.Combine(uploadsFolder, uniqueName);
 
-        if (!ModelState.IsValid)
-        {
-            return View(movie);
-        }
-        await fieldService.Create(movie, posterFile);
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await posterFile.CopyToAsync(stream);
+                }
 
-        return RedirectToAction(nameof(Index));
+                movie.Poster = new FileModel
+                {
+                    Name = posterFile.FileName,
+                    Path = "/img/" + uniqueName,
+                    UploadDate = DateTime.Now
+                };
+            }
+
+            await fieldService.Create(movie);   // вызываем сервис
+            return RedirectToAction(nameof(Index));
+        }
+        return View(movie);
     }
 
     /// <summary>
@@ -114,11 +126,16 @@ public class MovieController : Controller
     // GET: MOVIES/Edit/5
     public async Task<IActionResult> Edit(int? id)
     {
-        if (id == null) return NotFound();
+        if (id == null)
+        {
+            return NotFound();
+        }
 
-        var movie = await myService4.Details(id);
-
-        if (movie == null) return NotFound();
+        var movie = await myService4.Details(id.Value);// или через репозиторий/сервис
+        if (movie == null)
+        {
+            return NotFound();
+        }
 
         return View(movie);
     }
@@ -142,20 +159,31 @@ public class MovieController : Controller
             return NotFound();
         }
 
-        // Загружаем фильм из базы вместе с постером
-        var movieInDb = myService4.Details(id);
-
-        if (movieInDb == null)
-        {
-            return NotFound();
-        }
-
         if (ModelState.IsValid)
         {
-            // Обновляем обычные поля
-           await  myService2.Edit(id, movie, posterFile);
+            // Обработка нового постера (если загрузили)
+            if (posterFile != null && posterFile.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(_appEnvironment.WebRootPath, "img");
+                Directory.CreateDirectory(uploadsFolder);
 
+                var uniqueName = Guid.NewGuid() + "_" + Path.GetFileName(posterFile.FileName);
+                var filePath = Path.Combine(uploadsFolder, uniqueName);
 
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await posterFile.CopyToAsync(stream);
+                }
+
+                movie.Poster = new FileModel
+                {
+                    Name = posterFile.FileName,
+                    Path = "/img/" + uniqueName,
+                    UploadDate = DateTime.Now
+                };
+            }
+
+            await myService2.Edit(movie);
             return RedirectToAction(nameof(Index));
         }
 

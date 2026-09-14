@@ -1,4 +1,0 @@
-C:\Users\PC\Desktop\ASP-NET\Buisness Logic  Player\obj\Debug\net10.0\Buisness Logic  Player.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\PC\Desktop\ASP-NET\Buisness Logic  Player\obj\Debug\net10.0\Buisness Logic  Player.AssemblyInfoInputs.cache
-C:\Users\PC\Desktop\ASP-NET\Buisness Logic  Player\obj\Debug\net10.0\Buisness Logic  Player.AssemblyInfo.cs
-C:\Users\PC\Desktop\ASP-NET\Buisness Logic  Player\obj\Debug\net10.0\Buisness Logic  Player.csproj.CoreCompileInputs.cache
