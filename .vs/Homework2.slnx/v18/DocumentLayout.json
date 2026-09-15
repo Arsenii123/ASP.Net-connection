@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\Homework2\\",
+  "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\layers\\homework2\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\layers\\homework2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\layers\\homework2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|c:\\users\\pc\\desktop\\asp-net\\homework2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D50FE2A-0006-1A87-1128-914C26989FF4}|Homework2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -32,11 +32,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MovieController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\Homework2\\Controllers\\MovieController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Controllers\\MovieController.cs",
               "RelativeDocumentMoniker": "Controllers\\MovieController.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\Homework2\\Controllers\\MovieController.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Controllers\\MovieController.cs",
               "RelativeToolTip": "Controllers\\MovieController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-14T13:42:28.61Z",
               "EditorCaption": ""
@@ -45,9 +45,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\Homework2\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\Homework2\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -57,9 +57,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\Homework2\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\Homework2\\Program.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

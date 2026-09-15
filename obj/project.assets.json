@@ -3189,11 +3189,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\Homework2\\Homework2.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Homework2.csproj",
       "projectName": "Homework2",
-      "projectPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\Homework2\\Homework2.csproj",
+      "projectPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\Homework2.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\Homework2\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Homework2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3215,8 +3215,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\BusinessLogic\\BusinessLogic.csproj": {
-              "projectPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\Layers\\BusinessLogic\\BusinessLogic.csproj"
+            "C:\\Users\\PC\\Desktop\\ASP-NET\\BusinessLogic\\BusinessLogic.csproj": {
+              "projectPath": "C:\\Users\\PC\\Desktop\\ASP-NET\\BusinessLogic\\BusinessLogic.csproj"
             }
           }
         }
